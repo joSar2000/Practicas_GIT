@@ -1,106 +1,124 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html lang="en">
-	<head> 
-		<meta charset="UTF-8">
-		<title> Resumen HTML5 </title> 	
-		<link rel="stylesheet" type="text/css" href="css/screen.css"/>
 
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<title>HTML5</title>
+</head>
 
-	</head>
+<body>
+	<header class="cabecera">
+		<h1 class="title1">HTML5</h1>
+		<span><img src="images/css.jfif" alt="Logo"></span>
+		<nav>
+			<ul>
+				<li><a href="#">Inicio</a></li>
+				<li><a href="#">Menú</a></li>
+				<li><a href="#">Servicios</a></li>
+				<li><a href="#">Salir</a></li>
+			</ul>
+		</nav>
+	</header>
+	<section class="central">
+		<aside class="left">
+			Información Video
+			<iframe width="350" height="315" src="https://www.youtube.com/embed/hKPYkxdbRiY"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+		</aside>
+		<aside class="right">
+			Contenido
+			<p>Podemos agregar funciones básicas dentro de HTML como por ejemplo calcular un resultado numérico a partir
+				de una base y un exponente como se presenta a continuación:</p>
+			<p>Base: <input type="number" id="base" value="0" min="0" max="30"></p>
 
-	<body>
-		<!--h1 lo usamos para los títulos o subtítulos-->
-		<h1> RESUMEN  </h1> <hr>
-		<h2> ¿QUÉ ES HTML5? </h2>
-        
-		<img src="https://s3-us-west-2.amazonaws.com/devcodepro/media/blog/que-es-html.jpg" alt="HTML" title="HTML" height="160">
-		
-		<p>
-			<b>HTML</b> es un lenguaje de marcado para crear las páginas web, permite crear su contenido ya sea texto, imágenes, etc.
-		</p>
+			<p>Exponente: <input type="number" id="exponente" value="0" min="0" max="30"></p>
 
-		<h2> RESUMEN: </h2>	
-		
-		<!--p utilizamos para los párrafos-->
-		<ul>
-			<li>La WEB es un sistema de distribución de información accesible mediante el internet. <br /></li>
-			<li>HTML5 es la 5ta versión del lenguaje de etiquetado HTML. <br /></li>
-		</ul>
-			
-			HTML5 es la 5ta versión del lenguaje de etiquetado HTML.
-		
-		<h2>CRONOLOGÍA DE HTML5</h2>
-		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5QN6vzZjAKVUUD9kXpGhwo2KZp2kUjCs3jWoA4gIZHBC74iG0" alt="CRONOLOGÍA" title="CRONOLOGÍA" height="160">
-		<ul>
-			<li>HTML ha ido desarrollándose conjuntamente con el Word Wide. <br></li>
-			<li>Web, el cual fue fundado en 1994. <br> <br></li>
-			<li>En noviembre de 1995 se publicó HTML 2.0. <br><br></li>
-			<li>A mediados de 2007 se comenzó a trabajar en HTML5.  <br> <br></li>
-		</ul>
+			<p><input type="button" value="Calcular" onclick="mostrarPotencia()"></p>
 
-		
-		<h2>TECNOLOGÍAS DENTRO DE HTML5</h2>
-		<p>
-			Las páginas web no solo se desarrollan con el lenguaje de marcado HTML, sino como otras tecnologías como las hojas de estilo en cascada (CSS), la jerarquía de objetos (DOM) y el lenguaje denominado JAVASCRIPT. La unión de estas 4 tecnologías se conoce como DHTML dinámico que permite crear sitios web interactivos.
-			Además de DHTML, existen otras tecnologías como el API de programación XHR, el metalenguaje XML y el formato de intercambio de datos JSON, todos estos se conocen como AJAX: una técnica de desarrollo web que permite crear aplicaciones interactivas que se ejecutan en el navegador.
-			Durante algunos años se le han unido a AJAX una serie de tecnologías aún en desarrollo. A todas estas se las conoce como HTML5.
-		</p>
-		<h3>HTML5</h3>
-		<img src="http://elearningmasters.galileo.edu/wp-content/uploads/2018/05/01-1.jpg" alt="HTML5" title="HTML5" height="80">
-		<p>
-			Lenguaje de marcado que se ofrece con dos sintaxis: HTML Y XHTML.
-			Define nuevas etiquetas y atributos que añaden una nueva capacidad semántica al lenguaje.
-			Una nueva tecnología de la familia HTML5 es el CANVAS.
+			<p>Resultado: <output id="potencia" for="base exponente"></output></p>
+		</aside>
+	</section>
+	<section class="bloques">
+		<aside class="block">Bloque 1
+			<p>Podemos agregar una lista de elección con cualquier cantidad de opciones posibles para ser enviadas
+				dentro de un formulario. A continuación, presentaremos una lista de deportes para ser seleccionada tan
+				solamente una opción:</p>
+			<form action="">
+				<p>
 
-		</p>
-		<h3>CANVAS</h3>
-		<p>
-			Permite definir un área dentro de una página web en la que se puede dibujar con un API para JAVASCRIPT. Esta permite el desarrollo de juegos online sin el uso de FLASH.
-		</p>
-		<h3>SVG</h3>
-		<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/SVG_logo.svg/1200px-SVG_logo.svg.png" alt="SVG" title="SVG" height="80">
-		<p>
-			Lenguaje de etiquetas basado en XML que permite crear gráficos vectoriales.
-		</p>
-		<h3>API DE GEOLOCALIZACIÓN PARA JAVASCRIPT</h3>
-		
-		<p>
-			Permite tener la localización del usuario siempre y cuando el dispositivo que utilice pueda proporcionar esa información y que el usuario lo permita.
-		</p>
-	
-			Permite indicar aquellos recursos de una página web o de una aplicación web que se desea que se almacene de forma local.
-		</p>
-		<h3>TECNOLOGÍA DE BASE DE DATOS</h3>
-		<img src="https://blog.powerdata.es/hubfs/iStock-517373542.jpg" alt="BDD" title="BDD" height="145">
-		<p>
-			Es un API que permite almacenar la información local en el navegador mediante una base de datos SQL LITE.
-		</p>
-		<h3>WEB WORKERS</h3>
-		<img src="https://www.desarrollolibre.net/public/images/example/javascript/web_workers.png" alt="WEB WORKERS" title="WEB WORKERS" height="100">
-		<p>
-			API para JAVASCRIPT que permite crear múltiples hilos de ejecución que se ejecutan en paralelo.  
-		</p>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/1hR7EtD6Bns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-		
+					Deporte favorito:
 
-	</body>
+					<select name="deporte">
+
+						<option>Fútbol</option>
+
+						<option>Críquet</option>
+
+						<option>Básquetbol</option>
+
+						<option>Hockey</option>
+
+						<option>Tenis</option>
+
+					</select>
+
+					<input type="submit" value="Enviar">
+
+				</p>
+			</form>
+		</aside>
+		<aside class="block">Bloque 2
+			<p>Podemos también contar con una barra de progresos que nos permita evidenciar el avance de un proceso
+				dentro de una página web, ya sea de subida de archivos o descarga de los mismos: <progress></progress>
+			</p>
+		</aside>
+		<aside class="block">Bloque 3
+			<blockquote>Podemos agregar una marca de resaltado sobre una oración que podamos tomar como importante,
+				haciendo un resaltado del mismo dentro de un párrafo</blockquote>
+			Aqui tenemos un ejemplo en el que se puede evidenciar:
+			<mark>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
+				Latin literature from 45 BC, making it over 2000 years old. </mark>
+			Richard McClintock, a Latin professor at
+			Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
+			Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable
+			source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+			of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular
+			during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in
+			section 1.10.32.
+			<form action="">
+				<p>
+
+					Búsqueda de música: <input type="search" name="busquedamusica" placeholder="Canción, autor, álbum...">
+				
+					<input type="submit" value="Buscar">
+				
+				  </p>
+			</form>
+		</aside>
+	</section>
+	<footer class="pie">
+		Pie de página
+		<address>
+
+			Jorge Sarmiento<br>
+
+			<a href="jesarmiento3@utpl.edu.ec">jesarmiento3@utpl.edu.ec</a><br>
+
+			Ecuador<br>
+
+			Loja, Ecuador<br>
+
+			+256 4481-546585
+
+		</address>
+	</footer>
+</body>
+
 </html>
-
-<!--
-	ETIQUETAS DE TEXTO
-	br -- sirve para dar un salto de linea
-	h1 -- sirve para porner titulos o subtitulos
-	p -- sirve para eescribir grandes cantidades de texto como parrafos
-	hr -- sirve para marcar una linea divisoria
-	b -- sirve para colorear de negrita palabra o palabras
-	cite -- nos sirve para citra nombres de autores en caso de tomar alguna cita de ellos
-	blockquote -- nos sirve para hacer sitaciones de los autores
-	i -- para darle cursiva a las palabras
-	a -- para marcar algun enlace hacia otra página web
-	target="_blank" -- atributo para abrir en otra pestaña el enlace seleccionado
-	href="https://www.google.com.ec/" -- atributo para especificar la página web 
-	script -- permite llamar a un archivo js.
-	src="archivo.js" -- atributo que permite ejecutar código.
-	link:favicon -- atajo para seleccionar nuestra favicon (imagen para la pestaña).
-	img -- etiqueta para enlazar imágenes, src="ponemos direccion de la imagen"
--->
